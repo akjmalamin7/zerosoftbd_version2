@@ -1,0 +1,599 @@
+/* *************************************************************************************************
+******************************************    START GLOBAL AREA CSS   ******************************
+****************************************************************************************************/
+*{
+    box-sizing:border-box;
+}
+html{
+	overflow-x: hidden;
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-size:18px;
+}
+
+a:hover{
+    text-decoration:none;
+}
+p, h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+h1{
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+h2 {
+	font-family: 'Source Sans Pro';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	font-size: 40px;
+	line-height: 46px;
+}
+h3{
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+h4{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+h5{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+h6{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+.container{
+    max-width: 1250px !important;
+    width:100%;
+    margin:0 auto;
+    padding:0px 25px !important;
+}
+.section-padding{
+    padding:110px 0 !important;
+}
+.my-26{
+    margin-top:26px !important;
+    margin-bottom:26px !important;
+}
+.section-title{}
+.section-title h2 {
+	font-size: 43px;
+	font-weight: 600;
+	font-style: normal;
+	margin-bottom: 17px;
+}
+.section-title p {
+	font-size: 19px;
+	max-width: 780px;
+	margin: 0 auto;
+	line-height: 26px;
+}
+
+.mt-70{
+    margin-top:70px;
+}
+/* *************************************************************************************************
+******************************************      END GLOBAL AREA CSS   ******************************
+****************************************************************************************************/
+
+
+/* *************************************************************************************************
+******************************************   START HEADER SECTTION CSS *****************************
+****************************************************************************************************/
+
+.header-section{
+    width:100%;
+    background-image:url(../images/home-banner/home-banner2.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position: relative;
+}
+.header-inner {
+
+}
+.navbar{
+    padding:20px 0px !important;
+}
+/* logo */
+.custom-nav{
+    width:180px !important;
+}
+.custom-nav img{
+    width:100%;    
+}
+/* link */
+.header-section .nav-link {
+	font-size: 16px !important;
+	color: #fff !important;
+	margin: 0 10px;
+}
+
+/* home banner */
+.banner-intro{
+    color:#fff !important;
+    width:100%;
+}
+.banner-intro-title{}
+.banner-intro-title p {
+	font-size: 64px !important;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 66px;
+}
+.banner-intro-title p span{
+    font-weight: 300 !important;
+}
+
+/* subtitle */
+.banner-intro-subtitle{
+    margin-top:35px;
+}
+.banner-intro-subtitle p {
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+/* description */
+.banner-intro-description {
+	margin-top: 7px;
+}
+.banner-intro-description p {
+	font-size: 25px;
+}
+.banner-intro-description p span{
+    color:#00D1FF !important;
+    font-weight: 600;
+}
+.banner-intro-button {
+	margin-top: 55px;
+}
+.banner-intro-button a {
+	display: inline-block;
+	padding: 12px 30px;
+	background: #00D1FF !important;
+	font-size: 18px !important;
+	font-weight: 600;
+	color: #fff !important;
+	text-transform: uppercase;
+}
+.home-banner-section.clearfix {
+	padding: 140px 0px 140px 0px;
+}
+/* banner intro animation */
+.banner-intro-animation img {
+	position: relative;
+	animation: banner_intro 2.2s infinite alternate;
+}
+@keyframes banner_intro{
+    0%{
+        bottom:0px;
+    }
+    100%{
+        bottom:20px;
+    }
+}
+
+/* banner wave */
+ .banner-wave{
+    width:100%;
+    height:140px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    background-image:url(../images/home-banner/wave2.png);
+    background-size:cover;
+    background-position:center;
+    animation: banner_wave 15s linear infinite;
+    opacity: .10;
+   
+
+}
+.banner-wave::after{
+    content:"";
+    width:100%;
+    height:140px;
+    background-image:url(../images/home-banner/wave2.png);
+    background-size:cover;
+    background-position:center;
+    animation: banner_wave_reverse 15s linear infinite;
+    position: absolute;
+    opacity: .139;
+
+}
+.banner-wave::before{
+    content:"";
+    width:100%;
+    height:140px;
+    background-image:url(../images/home-banner/wave2.png);
+    background-size:cover;
+    background-position:center;
+    animation: banner_wave_reverse_b 30s linear infinite;
+    position: absolute;
+    opacity: .135;
+
+}
+@keyframes banner_wave{
+    0%{
+       background-position:0px;
+    }
+    100%{
+        background-position:1600px;
+    }
+} 
+
+@keyframes banner_wave_reverse{
+    0%{
+       background-position:1600px;
+    }
+    100%{
+        background-position:0px;
+    }
+}
+@keyframes banner_wave_reverse_b{
+    0%{
+       background-position:0px;
+    }
+    100%{
+        background-position:1600px;
+    }
+}
+/* *************************************************************************************************
+******************************************   END HEADER SECTTION CSS   *****************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+***************************************   START DREAM DEVELOP SECTTION CSS *************************
+****************************************************************************************************/
+.dream-develop-section{
+    width:100%;
+    background-image:url(../images/dream/img1-bg.png);
+    background-position:top left;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.dream-col-1{}
+.dream-col-2{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#F2709C 0%,#9460FF 100%);
+}
+.dream-col-3{}
+.dream-col-4{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#0ACBF5 0%,#82E182 100%);
+}
+.dream-col-5{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#FE8F75 0%,#F2709C 100%);
+}
+.dream-col-6{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#0ACBF5 0%,#82E182 100%);
+}
+.dream-col-7{}
+.dream-col-8{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#F2709C 0%,#9460FF 100%);
+}
+.h-100 {
+	height: 100px !important;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    color:#fff !important;
+}
+.h-100 ul li {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 25px;
+}
+/***************************************************************************************************
+***************************************   END DREAM DEVELOP SECTTION CSS   *************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+***************************************  START FEATURED ITEMS SECTTION CS  *************************
+****************************************************************************************************/
+.featured-items-section{
+    width:100%;
+    background-image:url(../images/featured-items/abstract-shape.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/* single feature item */
+
+.single-featured-item {
+}
+.single-featured-item .card{
+    border:0px solid transparent !important;
+    box-shadow: 0 0 30px rgba(0,0,0,.12);
+    transition:1.5s !important;
+}
+.single-featured-item .card .card-image{
+    overflow: hidden;
+    border-radius: .25rem;
+}
+.single-featured-item .card img{
+    transition:1s !important;
+    overflow: hidden;
+}
+.single-featured-item h4 {
+	font-size: 25px;
+	font-weight: 600;
+	color: #000 !important;
+	line-height: 25px;
+}
+.single-featured-item p {
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 15px;
+}
+.single-featured-item:hover .card{
+    transform:translate(0px, -10px);
+}
+.single-featured-item:hover .card img{
+    transform:scale(1.2);
+}
+/* feature button */
+.feature-button{
+    margin-top:55px;
+}
+.feature-button a{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #00D1FF !important;
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+/* card body inner */
+.card-body{
+    position: relative;
+}
+.card-body-inner {
+	position: absolute;
+	right: 22px;
+    top: -5px;
+    transition:.5s;
+}
+.card-body-inner i{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    border-radius:50%;
+    font-size:0px;
+    transition:.5s;
+    color:#000;
+}
+.single-featured-item:hover .card-body-inner i {
+	background: #fff;
+	font-size: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+}
+.single-featured-item:hover .card-body-inner{
+    top:-27px;
+}
+.card-body-inner i:hover{
+    background:#00D1FF !important;
+    color:#fff;
+}
+/***************************************************************************************************
+***************************************  END FEATURED ITEMS SECTTION CS    *************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+*************************************** START LATEST PRODUCT SECTTION CSS  *************************
+****************************************************************************************************/
+.letest-product-section {
+	width: 100%;
+	background-image: url('../images/latest-product/bg/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* latest product menu */
+.letest-product-menu ul li {
+	display: inline-block;
+	font-size: 16px !important;
+	color: #fff !important;
+	margin: 0 10px;
+	background: #00D1FF;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* latest product */
+.sinlge-product {
+	margin-bottom: 28px;
+}
+.sinlge-product .card{
+    overflow: hidden;
+    border:none !important;
+}
+.sinlge-product .card .card-inner {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    transition:.5s;
+    overflow: hidden;
+}
+.sinlge-product .card .card-inner h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99 !important;
+}
+.sinlge-product:hover .card .card-inner h4{
+    opacity: 1;
+    color:#fff;
+}
+.sinlge-product:hover .card .card-inner {
+	background: #12CCF5C2;
+	bottom: 0;
+}
+.hvr-outline-out::before {
+    border: #00D1FF solid 4px !important;
+}
+.hvr-outline-out{
+    display: block;
+}
+/***************************************************************************************************
+***************************************  END LATEST PRODUCT SECTTION CS    *************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+***************************************  START PRODUCT CUNDOWN SECTTION CS *************************
+****************************************************************************************************/
+.product-count-down-section {
+	width: 100%;
+	background-image: url('../images/product-counDown/product-coundDown.png');
+	background-position: 0px -15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.single-product-count-down-content {
+	margin-top: 100px;
+}
+.single-product-count-down-content h2 {
+	font-weight: 600 !important;
+	font-size: 42px;
+	line-height: 52px;
+}
+.single-product-count-down-content h2 span {
+	color: #00D1FF;
+}
+.single-product-count-down-content p {
+	margin-top: 15px;
+	margin-bottom: 34px;
+}
+.single-product-count-down-item{
+    text-align:center;
+}
+.single-product-count-down-item .count-digit span{
+    font-size:30px;
+    font-weight: 700;
+    color: #00D1FF;
+}
+/***************************************************************************************************
+***************************************  START PRODUCT CUNDOWN SECTTION CS *************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+***************************************  START HUMAN SUPPORT SECTTION CS   *************************
+****************************************************************************************************/
+.human-support{
+    padding:40px 5px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#FE8F75 0%,#F2709C 100%);
+    text-align:center;
+    color:#fff;
+}
+/***************************************************************************************************
+***************************************  END HUMAN SUPPORT SECTTION CS     *************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+***************************************  START CLIENT FEADBACK SECTTION CS *************************
+****************************************************************************************************/
+.client-feadback-section{
+    width:100%;
+    background-image: url(../images/feadback/ryse-version9-clientsbackgrnd.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.feadback-title h2 {
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 45px;
+}
+.feadback-title h2 span{
+    color: #00D1FF;
+}
+.feadback-subtitle p {
+	margin-top: 22px;
+	margin-bottom: 34px;
+}
+.client-info p{
+    font-size:15px;
+}
+.single-feadback .card{
+    box-shadow: 0px 0px 30px 0px rgba(177,89,105,.1);
+    border:none !important;
+}
+.single-feadback .card .arrow {
+    top: 97%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid #fff;
+    margin: 0;
+    position: absolute;
+}
+.client-details{
+    margin-top:35px;
+}
+.owl-carousel .owl-item img {
+	display: block;
+	width: unset !important;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+	display: block;
+}
+.owl-next{
+    position: absolute;
+    right:5px;
+}
+.owl-prev {
+	position: absolute;
+	right: 25px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	color: #000;
+	background: transparent;
+}
+/***************************************************************************************************
+***************************************  START CLIENT FEADBACK SECTTION CS *************************
+****************************************************************************************************/
