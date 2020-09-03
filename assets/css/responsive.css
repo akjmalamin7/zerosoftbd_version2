@@ -1,0 +1,17 @@
+@media(max-width:1199px){
+    #myNav {
+        position: absolute;
+        max-width: 1250px;
+        width: 100%;
+        top: 90px;
+        left: 0;
+        background: #fff !important;
+        padding-left: 17px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        color:#000 !important;
+    }
+    .navbar-nav .nav-item {
+        border-bottom:1px solid #dddddd !important;
+    }
+}

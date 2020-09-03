@@ -80,7 +80,7 @@ h6{
     margin-top:26px !important;
     margin-bottom:26px !important;
 }
-.section-title{}
+
 .section-title h2 {
 	font-size: 43px;
 	font-weight: 600;
@@ -114,12 +114,24 @@ h6{
     background-repeat:no-repeat;
     position: relative;
 }
-.header-inner {
 
-}
 .navbar{
     padding:20px 0px !important;
 }
+.fixed-header{
+    background:#032F3A !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 999;
+    transition:.5s;
+}
+
+
+
+
+
 /* logo */
 .custom-nav{
     width:180px !important;
@@ -139,7 +151,7 @@ h6{
     color:#fff !important;
     width:100%;
 }
-.banner-intro-title{}
+
 .banner-intro-title p {
 	font-size: 64px !important;
 	font-weight: 700;
@@ -279,12 +291,12 @@ h6{
     background-size:cover;
     background-repeat: no-repeat;
 }
-.dream-col-1{}
+
 .dream-col-2{
     background-color: transparent;
     background-image: linear-gradient(180deg,#F2709C 0%,#9460FF 100%);
 }
-.dream-col-3{}
+
 .dream-col-4{
     background-color: transparent;
     background-image: linear-gradient(180deg,#0ACBF5 0%,#82E182 100%);
@@ -297,7 +309,7 @@ h6{
     background-color: transparent;
     background-image: linear-gradient(180deg,#0ACBF5 0%,#82E182 100%);
 }
-.dream-col-7{}
+
 .dream-col-8{
     background-color: transparent;
     background-image: linear-gradient(180deg,#F2709C 0%,#9460FF 100%);
@@ -331,37 +343,34 @@ h6{
 }
 
 /* single feature item */
-
-.single-featured-item {
-}
-.single-featured-item .card{
+.single-announcements-item .card, .single-featured-item .card{
     border:0px solid transparent !important;
     box-shadow: 0 0 30px rgba(0,0,0,.12);
     transition:1.5s !important;
 }
-.single-featured-item .card .card-image{
+.single-announcements-item .card .card-image, .single-featured-item .card .card-image{
     overflow: hidden;
     border-radius: .25rem;
 }
-.single-featured-item .card img{
+.single-announcements-item .card img, .single-featured-item .card img{
     transition:1s !important;
     overflow: hidden;
 }
-.single-featured-item h4 {
+.single-announcements-item h4, .single-featured-item h4 {
 	font-size: 25px;
 	font-weight: 600;
 	color: #000 !important;
 	line-height: 25px;
 }
-.single-featured-item p {
+.single-announcements-item p, .single-featured-item p {
 	font-size: 18px;
 	line-height: 24px;
 	margin-top: 15px;
 }
-.single-featured-item:hover .card{
+.single-announcements-item:hover .card, .single-featured-item:hover .card{
     transform:translate(0px, -10px);
 }
-.single-featured-item:hover .card img{
+.single-announcements-item:hover .card img, .single-featured-item:hover .card img{
     transform:scale(1.2);
 }
 /* feature button */
@@ -378,16 +387,16 @@ h6{
     text-transform: uppercase;
 }
 /* card body inner */
-.card-body{
+.single-announcements-item .card-body, .single-featured-item .card-body{
     position: relative;
 }
-.card-body-inner {
+.single-announcements-item .card-body-inner, .single-featured-item .card-body-inner {
 	position: absolute;
 	right: 22px;
     top: -5px;
     transition:.5s;
 }
-.card-body-inner i{
+.single-announcements-item .card-body-inner i, .single-featured-item .card-body-inner i{
     width:50px;
     height:50px;
     line-height:50px;
@@ -397,15 +406,15 @@ h6{
     transition:.5s;
     color:#000;
 }
-.single-featured-item:hover .card-body-inner i {
+.single-announcements-item:hover .card-body-inner i, .single-featured-item:hover .card-body-inner i {
 	background: #fff;
 	font-size: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
-.single-featured-item:hover .card-body-inner{
+.single-announcements-item:hover .card-body-inner, .single-featured-item:hover .card-body-inner{
     top:-27px;
 }
-.card-body-inner i:hover{
+.single-announcements-item .card-body-inner i:hover, .single-featured-item .card-body-inner i:hover{
     background:#00D1FF !important;
     color:#fff;
 }
@@ -416,6 +425,7 @@ h6{
 /***************************************************************************************************
 *************************************** START LATEST PRODUCT SECTTION CSS  *************************
 ****************************************************************************************************/
+/*
 .letest-product-section {
 	width: 100%;
 	background-image: url('../images/latest-product/bg/bg.png');
@@ -423,7 +433,7 @@ h6{
     background-repeat: no-repeat;
     background-size: cover;
     
-}
+} */
 
 /* latest product menu */
 .letest-product-menu ul li {
@@ -536,14 +546,15 @@ h6{
 ***************************************  START CLIENT FEADBACK SECTTION CS *************************
 ****************************************************************************************************/
 .client-feadback-section{
-    width:100%;
-    background-image: url(../images/feadback/ryse-version9-clientsbackgrnd.jpg);
+     width:100%;
+    background-image: url(../images/product-counDown/oval-copy-3.png);
     background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
+    background-position:400px center;
+    background-size:200px;
+    background-attachment: fixed;
 }
 .feadback-title h2 {
-	font-size: 42px;
+	font-size: 40px;
 	font-weight: 600;
 	line-height: 45px;
 }
@@ -558,7 +569,7 @@ h6{
     font-size:15px;
 }
 .single-feadback .card{
-    box-shadow: 0px 0px 30px 0px rgba(177,89,105,.1);
+    box-shadow: 0px 10px 20px rgba(0,0,0,.1);
     border:none !important;
 }
 .single-feadback .card .arrow {
@@ -584,16 +595,120 @@ h6{
 }
 .owl-next{
     position: absolute;
-    right:5px;
+    right:46%;
+    bottom:-60px;
 }
 .owl-prev {
 	position: absolute;
-	right: 25px;
+    right: 48%;
+    bottom:-60px;
+}
+.owl-prev i, .owl-next i{
+    font-size:15px;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
 	color: #000;
 	background: transparent;
 }
 /***************************************************************************************************
-***************************************  START CLIENT FEADBACK SECTTION CS *************************
+***************************************  START CLIENT FEADBACK SECTTION CSS ************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+**********************************  START LATEST ANNOUNCEMENTS SECTTION CSS ************************
+****************************************************************************************************/
+.latest-announcements-section {
+	background-color: #fbfbfb;
+}
+/***************************************************************************************************
+**********************************  END LATEST ANNOUNCEMENTS SECTTION CSS   ************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+***************************************  START PARTNER LOGO SECTTION CSS   *************************
+****************************************************************************************************/
+.partner-logo-section{
+    padding-top:100px;
+}
+.border-bottom {
+	border-bottom: 1px solid #f0f0f1 !important;
+	padding-bottom: 69px;
+}
+.partner-logo-section .owl-prev, .partner-logo-section .owl-next, .partner-logo-section .owl-carousel .owl-dots.disabled{
+    display: none;
+}
+/***************************************************************************************************
+***************************************  START PARTNER LOGO SECTTION CSS   *************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+***************************************  START FOOTER SECTTION CSS         *************************
+****************************************************************************************************/
+.footer-section {
+	background-color: #032F3A;
+}
+.footer-section .footer-top .part-link h3{
+    color: #fff;
+    position: relative;
+    margin-bottom: 21px;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.footer-section .footer-top .part-link h3::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -5px;
+	height: 2px;
+	width: 40px;
+	background: #00C7F9;
+}
+.footer-section .footer-top .part-about p{
+    color:#c7c2e4;
+}
+.footer-section .footer-top .part-link ul li{}
+.footer-section .footer-top .part-link ul li a{
+    color:#c7c2e4 !important;
+}
+.footer-section .footer-bottom .part-copyright h3 {
+	font-size: 19px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #c7c2e4 !important;
+}
+.footer-bottom p{
+    color:#c7c2e4 !important;
+}
+
+.footer-section .footer-bottom .part-social h4 {
+	font-size: 20px;
+    color:#c7c2e4 !important;
+	margin-bottom: 29px;
+}
+.footer-section .footer-bottom .part-social a {
+	width: 40px;
+	height: 40px;
+	color: #00C7F9;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 14px;
+	-webkit-transition: .3s ease-in;
+	-o-transition: .3s ease-in;
+	transition: .3s ease-in;
+}
+.footer-section .footer-bottom .part-social a:hover {
+	background-color: #00C7F9;
+	color: #fff;
+}
+.footer-section .footer-bottom .part-social a:last-child {
+	margin-right: 0;
+}
+/***************************************************************************************************
+***************************************    END FOOTER SECTTION CSS         *************************
 ****************************************************************************************************/
